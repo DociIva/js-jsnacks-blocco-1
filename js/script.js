@@ -24,7 +24,7 @@ for( var i = 0 ; i < contenuto; i++) {
 console.log('Totale della somma dei numeri', somma);
 */
 // seconda con WHILE
-
+/*
 var contatore = 1;
 // WHILE 
 while( contatore <= contenuto ) {
@@ -35,3 +35,24 @@ while( contatore <= contenuto ) {
     contatore++;
 } 
 console.log('Totale della somma dei numeri', somma);
+*/
+
+//Snack 2
+
+//Inserisci un numero, se è pari stampa il numero, 
+//se è dispari stampa il numero successivo
+
+
+// inserisci un numero
+var numero = parseInt(prompt('Inserisci un numero '));
+
+// if così per vedere se è pari
+// if(numero % 2 === 0) 
+
+// per avere il lavore dispari con 'diverso da 0' ( % 2 !== 0)
+ if( numero % 2 === 0) {
+    console.log(numero);
+ } else {
+     // + 1 così da l'incremento
+     console.log(numero + 1);
+ }
