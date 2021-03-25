@@ -62,7 +62,7 @@ if( numero % 2 === 0) {
 //Generatore di “nomi cognomi” casuali:
 //prendendo una lista di nomi e una lista di cognomi,
 //Gatsby vuole generare una falsa lista di 3 invitati.
-
+/*
 // Generazione delle due liste con due array
 var nomi = ['Pino', 'Pippo', 'Marco', 'Liugi'];
 console.log(nomi);
@@ -86,3 +86,22 @@ for(var i = 0; i < 3; i++) {
     listaPiena.push(newListaPiena);
 }
 console.log(newListaPiena);
+*/
+//Snack 4
+//Crea un array di numeri interi e fai la somma di tutti 
+//gli elementi che sono in posizione dispari
+
+// creazione dei due array
+var numeri = ['4', '5', '2','6','7'];
+var somma = 0;
+
+// con for
+for(var i = 0; i < numeri.length; i++){
+    console.log(numeri[i]);
+    console.log('Posizione ', i); // per avere la Posizione
+    // If (diverso per ottenere i numeri dispari)
+    if(i % 2 === 0){
+        somma += numeri[i];
+    }
+}
+console.log('Totale della somma dei numeri in posizione dispari', somma);
