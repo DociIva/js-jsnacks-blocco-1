@@ -8,21 +8,25 @@
 
 // prima con il FOR
 // chiedi all'utente di inserire un numero 5 volte
-var contatore = 5;
+var contenuto = 5;
 // somma
 var somma = 0;
 
 // è la variabili contenitore dei numeri inseriti 
 // FOR 
-for( var i = 0 ; i < contatore; i++) {
-    var numeri = parseInt(prompt('Inserisci numero' + i + 'di' + contatore));
+for( var i = 0 ; i < contenuto; i++) {
+    var numeri = parseInt(prompt('Inserisci numero' + i + 'di' + contenuto));
        console.log(numeri);
        somma += numeri;
 
 }
 // per stamapre la somma di tutti i numeri inseriti dagli utenti
 console.log('Totale della somma dei numeri', somma);
-
+/*
 // seconda con WHILE
 
 //chiedi all'utente 
+var  = 1;
+
+// WHILE 
+while( contatore < ) */
