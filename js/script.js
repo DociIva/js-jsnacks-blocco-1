@@ -42,7 +42,7 @@ console.log('Totale della somma dei numeri', somma);
 //Inserisci un numero, se è pari stampa il numero, 
 //se è dispari stampa il numero successivo
 
-
+/*
 // inserisci un numero
 var numero = parseInt(prompt('Inserisci un numero '));
 
@@ -50,9 +50,39 @@ var numero = parseInt(prompt('Inserisci un numero '));
 // if(numero % 2 === 0) 
 
 // per avere il lavore dispari con 'diverso da 0' ( % 2 !== 0)
- if( numero % 2 === 0) {
+if( numero % 2 === 0) {
     console.log(numero);
- } else {
+} else {
      // + 1 così da l'incremento
      console.log(numero + 1);
- }
+}
+*/
+
+//Snack 3
+//Generatore di “nomi cognomi” casuali:
+//prendendo una lista di nomi e una lista di cognomi,
+//Gatsby vuole generare una falsa lista di 3 invitati.
+
+// Generazione delle due liste con due array
+var nomi = ['Pino', 'Pippo', 'Marco', 'Liugi'];
+console.log(nomi);
+
+var cognomi = ['Viola', 'Verdi', 'Rossi', 'Giallo'];
+console.log(cognomi);
+
+// lista vuota da dover riempire dopo con tutte e due
+var listaPiena = [];
+// qua con For
+for(var i = 0; i < 3; i++) {
+// genera un indice della lista dei nomi, random per per poter avere il numero
+
+    var randomNomiIndice = Math.floor(Math.random() * nomi.length);
+    console.log(randomNomiIndice); 
+    var randomCognomiIndice = Math.floor(Math.random() * cognomi.length);
+    console.log(randomCognomiIndice);
+
+ // generazione della var con la lista nuova con sia i nomi che i cognomi con il numero accostato
+    var newListaPiena = nomi[randomNomiIndice] + " " + cognomi[randomCognomiIndice];
+    listaPiena.push(newListaPiena);
+}
+console.log(newListaPiena);
