@@ -11,7 +11,7 @@
 var contenuto = 5;
 // somma
 var somma = 0;
-
+/*                                                         commento
 // è la variabili contenitore dei numeri inseriti 
 // FOR 
 for( var i = 0 ; i < contenuto; i++) {
@@ -22,11 +22,16 @@ for( var i = 0 ; i < contenuto; i++) {
 }
 // per stamapre la somma di tutti i numeri inseriti dagli utenti
 console.log('Totale della somma dei numeri', somma);
-/*
+*/
 // seconda con WHILE
 
-//chiedi all'utente 
-var  = 1;
-
+var contatore = 1;
 // WHILE 
-while( contatore < ) */
+while( contatore <= contenuto ) {
+    var numero = parseInt(prompt ('Inserisci numero' + contatore + 'di' + contenuto));
+    // prima la somma
+    somma += numero;
+    // contantore dell'incremento
+    contatore++;
+} 
+console.log('Totale della somma dei numeri', somma);
